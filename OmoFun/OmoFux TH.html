@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmoFux TH</title>
+    <link rel="stylesheet" href="OmoFux TH.css">
+</head>
+<body>
+    <!-- 登录页面 -->
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="Image/logo.jpg" alt="Logo" id="logo-img">
+        </div>
+        <div class="form-container">
+            <div class="form-group" id="username-group">
+                <input type="text" id="username" placeholder="用户名" autofocus>
+            </div>
+            <div class="form-group" id="password-group">
+                <input type="password" id="password" placeholder="密码">
+            </div>
+            <button id="login-btn">登录</button>
+            <div id="error-message"></div>
+        </div>
+    </div>
+
+    <!-- 开机动画 -->
+    <div class="splash-screen" id="splash-screen">
+        <video class="splash-video" id="splash-video" autoplay>
+            <source src="TX Mascot/TX Mascot1.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+    </div>
+
+    <!-- 主内容页面 -->
+    <div class="main-content" id="main-content">
+        <!-- 悬浮装饰图片 -->
+        <img src="Image/logo1.png" alt="悬浮图片" class="floating-image toggle-button" onclick="toggleImageContainer()">
+
+        <div class="container">
+            <!-- 视频列表 -->
+            <div class="video-list" id="video-list">
+                <!-- 视频列表将由JavaScript动态生成 -->
+            </div>
+
+            <!-- 视频播放器 -->
+            <div class="video-player">
+                <video class="main-video" id="main-video" controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    您的浏览器不支持视频标签。
+                </video>
+            </div>
+        </div>
+
+        <!-- 背景图片列表 -->
+        <div class="image-container" id="image-container">
+            <!-- 背景图片将由JavaScript动态生成 -->
+        </div>
+    </div>
+    <script src="OmoFux THA.js"></script>
+    <script src="OmoFux TH.js"></script>
+</body>
+</html>
